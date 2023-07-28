@@ -747,7 +747,7 @@
     display: grid;
     grid-template-columns: repeat(3, auto);
     column-gap: 74px;
-    row-gap: 67px;
+    row-gap: 30px;
     max-width: 1078px;
     margin: 0 auto;
 }
@@ -789,6 +789,12 @@
     line-height: 15px;
     color: #8E8E8E;
     text-align: center;
+}
+@media(max-width:500px){
+    .text1__block{
+        font-size: 14px;
+        word-break: break-all;
+    }
 }
 /* секция 6 */
 .section__6{
@@ -1498,36 +1504,6 @@ a {
 .menuBurger--open .burger__line:nth-child(4) {
     transform: scaleX(0);
 }
-
-@media (min-width: 1100px){
-    .menuBurger{
-        display: none;
-    }
-}
-
-@media (max-width: 1100px){
-    .burger{
-        display: block;
-    }
-    .menuBurger{
-       display: block;
-    }
-    .menu{
-        display: none;
-    }
-}
-
-@media (max-width: 750px){   
-    .menu{
-        display: none;
-    }
-    .burger{
-        display: block;
-    }
-    
-    
-}
-
 .header {
     position: fixed;
     z-index: 10;
@@ -1597,16 +1573,14 @@ a {
     transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
-@media (max-width: 420px){
-    .pathForCompanyName{
+
+@media (min-width: 1100px){
+    .menuBurger{
         display: none;
-    }
-    .logo{
-        width: 100px;
-        margin-left: 10px;
     }
     
 }
+
 
 /* секция 5 */
 .section__services-menu {
@@ -1996,6 +1970,23 @@ a {
     position: relative;
     bottom: 125px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .modal-p{
     font-weight: 400;
     font-size: 18.187px;
@@ -2955,4 +2946,59 @@ a {
 
 .h2-invisible {
     visibility: hidden;
+}
+
+@media (max-width: 1100px){
+    .burger{
+        display: block;
+    }
+    .menuBurger{
+       display: block;
+    }
+    .menu{
+        display: none;
+    }
+    .header-menu {
+        margin-top: 20px;
+    }
+    .orange__row {
+        margin-top: 20px;
+        
+    }
+    
+}
+
+@media (max-width: 750px){   
+    .menu{
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+    .section{
+        margin-top: 20px;
+    }
+    .servises__text,
+    .section_clients_reviews__header,
+    .services-par,
+    .services-par {
+        
+        margin-bottom: 30px;
+        margin-top:60px;
+    }
+    
+    
+    
+}
+
+
+@media (max-width: 420px){
+    .pathForCompanyName{
+        display: none;
+    }
+    .logo{
+        width: 100px;
+        margin-left: 10px;
+    }
+    
 }
