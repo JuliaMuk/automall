@@ -61,12 +61,20 @@ const swiper = new Swiper('.section-slider__swiper', {
     slidesPerView: 1,
     spaceBetween: 15,
     breakpoints:{
-      990:{
+      320:{
+        slidesPerView: 1,
+        spaceBetween: 15,
+      },
+      520:{
         slidesPerView: 2,
         spaceBetween: 15,
       },
-      1260:{
+      990:{
         slidesPerView: 3,
+        spaceBetween: 15,
+      },
+      1260:{
+        slidesPerView: 4,
         spaceBetween: 15,
       },
     },

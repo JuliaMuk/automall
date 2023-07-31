@@ -27,3 +27,9 @@ burgerBtn.addEventListener('click', ()=>{
         })
     }
 });
+const menuLinks = document.querySelectorAll('.menu__link');
+menuLinks.forEach((item)=>{
+    item.addEventListener('click',(evn)=>{
+        menu.classList.remove('menuBurger--open');
+    })
+})
