@@ -755,6 +755,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 .advantages__svg1 svg{
     margin-bottom: 10px;
@@ -1316,9 +1317,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     }
 }
 @media(max-width:880px){
-    .advantages{
-        grid-template-columns: repeat(2, auto);
-    }
     .info{
         flex-direction: column;
     }
@@ -1609,6 +1607,7 @@ a {
     display: grid;
     grid-template-columns:  repeat(4, 1fr);
     gap: 80px 70px;
+    align-items: center;
 }
 
 .grid-link:hover .grid-svg path, 
@@ -1858,12 +1857,12 @@ a {
 
 .footer {
     background: #F3930D;
-    min-height: 287px;
+    min-height: 200px;
 }
 
 .section__footer-menu {
     max-width: 1070px;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .footer-contacts {
@@ -1904,7 +1903,6 @@ a {
 }
 
 .footer-end {
-    padding-top: 20px;
     display: flex;
     justify-content: center;
 }
@@ -2005,6 +2003,11 @@ a {
     font-size: 25px;
     background: #F1F1F1;
     border-radius: 11.602px;
+}
+
+.stars{
+    position:absolute;  
+	bottom:10px;
 }
 
 .modal-btn{
@@ -2213,7 +2216,8 @@ a {
         margin: 100px 0 0 0;
     }
     .sec2{
-        padding: 0 20px 0 50px;  
+        padding: 0 20px 0 50px; 
+        border-radius: 0px; 
     }
     .sec2_p{
         margin: 0 20px 0 0;
@@ -2419,17 +2423,13 @@ a {
 .section_clients_reviews__slider-item {
   background: #FFFFFF;
 }
-.section-slider__swiper-slide{
-    /* background-color: #F3930D; */
-  
-}
+
 
   .swiper .swiper-slide {
     text-align: center;
     /* background: #F3930D; */
     display: flex;
     justify-content: center;
-    align-items: center;
   }
   
   .swiper .swiper-slide img {
@@ -2511,13 +2511,15 @@ a {
 .section_clients_reviews__slider-item{
     display: flex;
     width: 340px;
-    height: 407px;
+    height: 427px;
     background: #FFFFFF;
     box-shadow: -5px -5px 20px rgba(0, 0, 0, 0.05), 5px 5px 20px rgba(0, 0, 0, 0.05);
     border-radius: 18px;
     text-align: center;
     justify-content: center;
     flex-shrink: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .section_clients_reviews__wrapper{
     display: flex;
@@ -2563,21 +2565,21 @@ a {
 .section_clients_reviews__slider{
     position: relative;
     text-align: center;
-    width: 1060px;
+    width: 100%;
 }
 @media (max-width: 1100px) {
     .section_clients_reviews__slider{
-        width: 702px;
+        width: 100%;
     }
 }
 @media (max-width: 770px) {
     .section_clients_reviews__slider{
-        width: 344px;
+        width: 100%;
     }
 }
 @media (max-width: 670px) {
     .section_clients_reviews__slider{
-        width: 344px;
+        width: 100%;
     }
 }
 .section_clients_reviews__wrapper-for-slider{
@@ -2965,7 +2967,30 @@ a {
         margin-top: 20px;
         
     }
-    
+    .footer-contacts{
+        justify-content: space-around;
+    }
+    .section-wide-map{
+        margin-top: 110px;
+    }
+    .first-map-text-p{
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 900px){
+    .section__footer-menu {
+        margin-top: 40px;
+    }
+    .footer-contacts{
+        font-size: 16px;
+    }
+    .footer {
+        min-height: 180px;
+    }
+    .text1__block{
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 750px){   
@@ -2986,13 +3011,71 @@ a {
         margin-bottom: 30px;
         margin-top:60px;
     }
-    
-    
-    
+    .text1__block{
+        font-size: 16px;
+    }
+    .text2__block{
+        font-size: 11px;
+    }
+    .advantages__svg,
+    .grid-svg
+    {
+        width: 50%;
+    }
+    .grid-svg2{
+        width: 40%;
+    }
+    .grid-svg3{
+        width: 30%;
+    }
+    .advantages{
+        grid-template-columns: repeat(2, auto);
+    }
+    .servises__text,
+    .services-par,
+    .section_clients_reviews__header
+    {
+        font-size: 30px;
+    }
+    .services-par,
+    .section_clients_reviews__header
+    {
+        margin-top: 10px;
+    }
+    .services-heading{
+        margin-bottom: 0px;
+    }
+    .footer-contacts{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .footer-list{
+        align-items: center;
+    }
+    .section__footer-menu {
+        margin-top: 20px;
+    }
+    .footer li {
+        padding-bottom: 16px;
+    }
+    .footer-list {
+        margin: 3px;
+    }
+    .sec2{
+        margin-top: 140px;
+    }
+    .footer__par{
+        font-size: 11px;
+    }
+    .map-style{
+        margin: 25px auto 0px auto;
+    }
+    .section_clients_reviews__wrapper{
+        padding-bottom: 30px;
+    }
 }
 
-
-@media (max-width: 420px){
+@media (max-width: 410px){
     .pathForCompanyName{
         display: none;
     }
@@ -3000,5 +3083,7 @@ a {
         width: 100px;
         margin-left: 10px;
     }
-    
+    .grid-svg3{
+        width: 25%;
+    }
 }
